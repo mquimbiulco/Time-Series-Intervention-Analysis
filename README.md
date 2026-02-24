@@ -8,8 +8,8 @@ El objetivo del proyecto es cuantificar el efecto de cierta intervención realiz
 
 ## 🧠 Metodología Analítica
 En entornos de negocio y procesos estocásticos, los test A/B tradicionales a menudo son imposibles de implementar. Para este caso, se utilizó un diseño cuasi-experimental (ITS) que permite:
-1. **Modelar la tendencia pre-intervención** utilizando modelos autorregresivos (ARIMA / SARIMA) para capturar la inercia del sistema.
-2. **Evaluar el "Efecto de la Intervención"** modelando el cambio en el nivel y la pendiente de la serie temporal. 
+1. **Modelar la tendencia pre-intervención** utilizando modelos autorregresivos para capturar la inercia del sistema.
+2. **Evaluar el Efecto de la Intervención** modelando el cambio en el nivel y la pendiente de la serie temporal. 
 3. **Validación Estadística:** Análisis de la significancia estadística de los resultados para descartar relaciones espurias y atribuir el efecto a la intervención realizada. 
 
 ## 💼 Aplicación Transversal 
