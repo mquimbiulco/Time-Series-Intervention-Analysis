@@ -4,7 +4,7 @@
 **Tecnologías:** Python, Modelado Estadístico, Causal Inference.
 
 ## 🎯 Resumen General
-Este proyecto aplica técnicas de **Inferencia Causal** y análisis de **Series Temporales Interrumpidas (ITS)** para evaluar el impacto estadísticamente significativo de una intervención en un proceso industrial continuo. El objetivo principal es aislar el efecto real de la intervención con respecto a la estacionalidad previa, demostrando relaciones causales y no simples correlaciones.
+El objetivo del proyecto es cuantificar el efecto de cierta intervención realizada en los procesos previos al secado de piezas cerámicas sobre la temperatura de un secadero continuo mediante el diseño de Series Temporales Interrumpidas (ITS) para explicar la magnitud del efecto inmediato y la evolución de la intervención de manera sostenida.
 
 ## 🧠 Metodología Analítica
 En entornos de negocio y procesos estocásticos, los test A/B tradicionales a menudo son imposibles de implementar. Para este caso, se utilizó un diseño cuasi-experimental (ITS) que permite:
@@ -25,8 +25,6 @@ Aunque este caso de estudio está aplicado a la termodinámica de un secadero co
 - `/notebooks`: Cuadernos de jupyter con el Análisis Exploratorio de Datos y el desarrollo paso a paso del modelo ITS, así como el sustento matemático que justifica su aplicación y valida los resultados.
 - `/data`: Datasets utilizados (anonimizados por confidencialidad)
 ---
-*Para ver el código y el desarrollo matemático detallado, por favor navega a la carpeta `/notebooks`.*
-
 
 
 
