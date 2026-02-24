@@ -13,8 +13,8 @@ Este documento detalla la naturaleza de los conjuntos de datos utilizados y el p
 
 ### 1. Datos de Temperatura
 * **Extracción:** Consulta directa a la base de datos transaccional en **MySQL**. Filtrado exclusivo de las variables de interés (sensores de temperatura).
-* **Resampling y Regularización:** Dado que los sensores registran por cambios significativos, se regularizó la serie temporal a una frecuencia **horaria**. Se calculó el promedio de las observaciones por hora y se imputaron los valores faltantes utilizando interpolación hacia adelante (*forward-fill*).
-* **Detección y Tratamiento de Anomalías:** * Se entrenó un modelo no supervisado **Isolation Forest** para identificar el 1% de datos anómalos en las lecturas de los sensores.
+* **Resampling y Regularización:** Dado que los sensores registran por cambios significativos, se regularizó la serie temporal a una frecuencia **horaria**. Se calculó el promedio de las observaciones por hora y se imputaron los valores faltantes utilizando interpolación hacia adelante.
+* **Detección y Tratamiento de Anomalías:** * Se entrenó un modelo no supervisado Isolation Forest para identificar el 1% de datos anómalos en las lecturas de los sensores.
   * Para no perder la continuidad espacial y temporal de la serie, los valores atípicos detectados fueron sometidos a un proceso de **winsorización**, mitigando su impacto en la varianza sin eliminar las observaciones.
 
 ### 2. Datos de Calidad
